@@ -24,12 +24,12 @@ typedef enum Flags {
 // Structs for CPU architecture
 
 typedef struct Registers {
-    u_int16_t pc;   // Program Counter
-    u_int16_t fa;   // Flags
-    u_int16_t ac;   // Accumulator
-    u_int16_t sp;   // Stack Pointer
-    u_int16_t bp;   // Base Pointer
-    u_int16_t ix;   // Index Register
+    uint16_t pc;   // Program Counter
+    uint16_t fa;   // Flags
+    uint16_t ac;   // Accumulator
+    uint16_t sp;   // Stack Pointer
+    uint16_t bp;   // Base Pointer
+    uint16_t ix;   // Index Register
 } Registers;
 
 typedef struct CPU {

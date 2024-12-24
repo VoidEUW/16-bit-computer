@@ -22,10 +22,9 @@ int main() {
             printf("An Invalid command has been made...");
         }
     }
-    free_cpu(cpu);
-
     printf("Computer halts.\n");
 
+    free_cpu(cpu);
     return 0;
 }
 
@@ -39,7 +38,7 @@ void* safe_malloc(size_t size) {
 }
 
 void free_cpu(CPU* cpu) {
-    free(cpu->ram->memory);
     free(cpu->ram);
+    free(cpu->registers);
     free(cpu);
 }

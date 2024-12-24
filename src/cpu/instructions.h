@@ -65,7 +65,6 @@ void set_s_flag(CPU* cpu, uint16_t result);
 void set_c_flag(CPU* cpu, uint16_t result);
 void set_o_flag(CPU* cpu, uint16_t result);
 
-uint16_t get_value(CPU* cpu);
-void set_value(CPU* cpu);
+uint16_t get_value(CPU* cpu, uint16_t address);
 
 #endif

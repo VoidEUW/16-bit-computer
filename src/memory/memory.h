@@ -21,7 +21,8 @@ typedef enum MemorySegment {
 } MemorySegment;
 
 typedef struct RAM {
-    u_int16_t memory[MEMORY_SIZE];
+    uint16_t memory[MEMORY_SIZE];
+    uint16_t size;
 } RAM;
 
 int check_memory(RAM* ram);

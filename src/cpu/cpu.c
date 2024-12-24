@@ -43,6 +43,12 @@ Status execute_instruction(CPU* cpu) {
         case SUB:
             opcode_sub(cpu);
             return OK;
+        case AND:
+            opcode_and(cpu);
+            return OK;
+        case OR:
+            opcode_or(cpu);
+            return OK;
         case LDI:
             opcode_ldi(cpu);
             return OK;
