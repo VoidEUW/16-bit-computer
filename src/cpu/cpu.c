@@ -52,6 +52,24 @@ Status execute_instruction(CPU* cpu) {
         case LDI:
             opcode_ldi(cpu);
             return OK;
+        case JMP:
+            opcode_jmp(cpu);
+            return OK;
+        case JEQ:
+            opcode_jeq(cpu);
+            return OK;
+        case JNE:
+            opcode_jne(cpu);
+            return OK;
+        case PSH:
+            opcode_psh(cpu);
+            return OK;
+        case POP:
+            opcode_pop(cpu);
+            return OK;
+        case INT:
+            opcode_int(cpu);
+            return OK;
         default:
             return INVALID_INSTRUCTION;
     }
